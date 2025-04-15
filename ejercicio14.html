@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio14</title>
+    <script>
+        let numeros = prompt("Ingrese array de numeros sin coma ni espacios");
+        const duplicar = (num) => {
+        const arregloMulti = [];
+        for (let i = 0; i < num.length; i++) {
+            arregloMulti.push(num[i] * 2); }
+        return arregloMulti;
+        }
+        const resultado= duplicar(numeros);
+        alert("El array ingresado es: " + numeros); 
+        alert("El resultado es: " + resultado);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

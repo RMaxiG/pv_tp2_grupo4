@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio18</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a2a2a2;
+      font-family: cursive;
+    }
+    .cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 60%;
+      max-width: 700px;
+    }
+    #parrafo {
+      color: #333;
+      padding: 30px;
+      border: 3px solid #000000;
+      border-radius: 5px;
+      background-color: #e977c3;
+      margin-bottom: 20px;
+    }
+    #boton {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #1b9d21;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #boton:hover {
+      background-color: #148017;
+    }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <p id="parrafo">
+      El modelo de objeto de documento (DOM) es una interfaz de programación para los documentos HTML y XML. Facilita una representación estructurada del documento y define de qué manera los programas pueden acceder, al fin de modificar, tanto su estructura, estilo y contenido. El DOM da una representación del documento como un grupo de nodos y objetos estructurados que tienen propiedades y métodos. Esencialmente, conecta las páginas web a scripts o lenguajes de programación.
+    </p>
+    <button id="boton">Saber más</button>
+  </div>
+  <script type="module" src="js/ejercicio18.js"></script>
+</body>
+</html>

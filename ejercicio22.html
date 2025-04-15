@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio22_tp2</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    label {
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #resultado {
+      padding: 10px;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      width: 300px;
+      min-height: 40px;
+      line-height: 40px;
+      text-align: center;
+      overflow-y: auto;
+      white-space: pre-wrap
+    }
+    </style>
+</head>
+<body>
+ 
+    <label for="texto">Escribe un texto:</label><br>
+    <input type="text" id="texto"><br>
+    <div id="resultado"></div>
+    
+    <script type="module" src="js/ejercicio22.js"></script>
+</body>
+</html>

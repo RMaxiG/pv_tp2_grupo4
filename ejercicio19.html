@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Ejercicio19_tp2</title>
+    <script>
+        let cadena=prompt("Ingrese una cadena de caracteres");
+
+        function contarCaracter(cadena){
+            let contador = 0;
+            for(let i=0;i < cadena.length;i++){
+                if(cadena[i] == 'a' )
+                    contador++;
+            }
+            return contador;
+        }
+        alert("La palabra "+ cadena +"\nContiene un total de " + contarCaracter(cadena) + " veces repetira la 'a'.");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

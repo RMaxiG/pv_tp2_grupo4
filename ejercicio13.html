@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio13_tp2</title>
+    <script>
+        let arreglo =[];
+        let continuar=true;
+
+        while (continuar){
+        let numero = Number(prompt("Ingrese un valor numerico")); 
+        arreglo.push(numero);
+        continuar = confirm("¿Deseas agregar otro elemento?");
+        }
+
+        function mostrarArreglo(arreglo) {
+        alert("Numeros ingresados:\n" + arreglo.join("\n"));
+        }
+        
+        mostrarArreglo(arreglo);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

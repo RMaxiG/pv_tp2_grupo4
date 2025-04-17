@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20</title>
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        select {
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 2px solid #ddd;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .info {
+            font-size: 0.9em;
+            color: #777;
+            margin-top: 20px;
+    }   
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Elegí tu país preferido</h2>
+        <label for="PAIS">Selecciona un país:</label>
+        <select id="PAIS">Elegí un país americano-
+            <option value="">--Elegí un país americano--</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Peru">Peru</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+
+        <!-- Lista desplegable de capitales -->
+        <label for="capitalesAmericanas">Selecciona la capital:</label>
+        <select id="capitalesAmericanas" disabled>
+            <option value="">--Selecciona una capital--</option>
+        </select>
+
+        <div class="info">
+            <p>Selecciona un país de América y la capital se seleccionará automáticamente.</p>
+        </div>
+    </div>
+
+
+
+
+<script type="module">
+    import { seleccionarCapi } from './ejercicio20.js'
+    const supais = document.getElementById ('PAIS')
+    supais.addEventListener('change', seleccionarCapi)
+</script>
+
+</body>
+</html>

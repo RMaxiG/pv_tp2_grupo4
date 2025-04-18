@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--construir una página utilizando HTML, CSS y Javascript-->
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 21</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background-color: #006666;
+                color: #704009;
+            }
+    
+            h2 {
+                color: #704009;
+                text-align: center;
+            }
+    
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #c5c5c5;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    
+            input {
+                width: 100%;
+                padding: 10px;
+                font-size: 1em;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
+            }
+    
+            p {
+                font-size: 1.2em;
+                color: #555;
+                padding: 10px;
+                border-radius: 4px;
+                background-color: #d1cfcf;
+            }
+    
+            .info {
+                font-size: 0.9em;
+                color: #2c2c2c;
+                margin-top: 20px;
+            }
+    
+    </style>     
+</head>
+<body>
+        <div class="container"> 
+            <h2>Historias Sorprendentes</h2>
+            
+            <Input type="text" id="historia" placeholder="Platícanos a cerca de tí">
+
+            <p id="testoIngresado"> ¿Cuál ha sido tu mayor desafío hasta ahora?</p>
+
+            <div class="info">
+                <p> ¿Cuál es tu dream job? </p>
+            </div>
+        </div>
+
+
+
+    <script type="module" >
+    import {historiaEscrita} from "./ejercicio21.js";
+    const historia = document.getElementById("historia");
+    historia.addEventListener("input", historiaEscrita);
+    </script>
+
+</body> 
+</html>
